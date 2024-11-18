@@ -1,0 +1,133 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #4c5538, #d6df84);
+  color: #2e2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #7a7c5b, #aba979);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  background: linear-gradient(to right, #8f4a1d, #e5a95d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+  text-align: center;
+}
+
+/* Tabela de Preços */
+.pricing {
+  margin-bottom: 20px;
+}
+
+.pricing h2 {
+  font-size: 1.5rem;
+  color: #4c5538;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f5f5dc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+
+thead {
+  background: #8f4a1d;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background: #e7e4db;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 1rem;
+  color: #4c5538;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+input {
+  background: #e5e4dc;
+  color: #2e2c2c;
+}
+
+input:focus {
+  outline: 2px solid #4c5538;
+  background: #fff;
+}
+
+button {
+  background: linear-gradient(to right, #d6df84, #4c5538);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* Bilhete */
+#ticket {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(145deg, #e5e4dc, #d6df84);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#ticket h2 {
+  font-size: 1.5rem;
+  color: #4c5538;
+  margin-bottom: 10px;
+}
+
+#ticket p {
+  font-size: 1rem;
+  color: #2e2c2c;
+}
+
+.hidden {
+  display: none;
+}

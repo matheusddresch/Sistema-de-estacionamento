@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Estacionamento</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Sistema de Estacionamento</h1>
+    </header>
+
+    <main>
+      <div class="pricing">
+        <h2>Tabela de Preços</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tempo</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Até 15 minutos</td>
+              <td>Grátis</td>
+            </tr>
+            <tr>
+              <td>Até 3 horas</td>
+              <td>R$ 15,00</td>
+            </tr>
+            <tr>
+              <td>Cada hora adicional</td>
+              <td>R$ 2,50</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <form id="form-estacionamento">
+        <label for="placa">Placa do Veículo:</label>
+        <input type="text" id="placa" placeholder="Ex: ABC1D23" required>
+
+        <label for="hora-entrada">Hora de Entrada:</label>
+        <input type="time" id="hora-entrada" required>
+
+        <label for="hora-saida">Hora de Saída:</label>
+        <input type="time" id="hora-saida" required>
+
+        <button type="submit">Calcular</button>
+      </form>
+
+      <div id="ticket" class="hidden">
+        <h2>Bilhete do Estacionamento</h2>
+        <p id="ticket-estado"></p>
+        <p id="ticket-tempo"></p>
+        <p id="ticket-valor"></p>
+        <p id="ticket-horarios"></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
